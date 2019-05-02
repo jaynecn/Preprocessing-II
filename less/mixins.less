@@ -1,7 +1,17 @@
 // Mixins in here
 
+
 .layout(@justify, @align) {
   display: flex;
+  flex-direction: flex-start;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.column (@justify, @align) {
+  display: flex;
+  flex-direction: column;
+  // padding: 2rem 0rem;
   justify-content: @justify;
   align-items: @align;
 }
