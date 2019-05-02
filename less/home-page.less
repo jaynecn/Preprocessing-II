@@ -85,6 +85,19 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem 1.5rem;
+      
+      .text-content {
+        order: 0;
+      }
+      .img-content {
+        order: 1;
+      }
+    }   
 
     .text-content {
       padding-left: 1%;
@@ -104,6 +117,14 @@
     img {
       border-radius: 10px;
     }
+    
+    @media @mobile {
+      width: 90%;
+      margin: 2rem 1.5rem;
+      p {
+        font-size: 1.25rem;
+      }
+    }
   }
 
   .content-pick {
@@ -112,9 +133,21 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      .column (space-around, center);
+      margin: 2rem 1.5rem;
+      p {
+        font-size: 1.25rem;
+      }
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 80%;
+      }
 
       & .btn {
         background-color: darken(@eastern-blue, 10%);
