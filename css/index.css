@@ -179,7 +179,6 @@ nav a {
   padding: 1rem;
 }
 .footer {
-  width: 100%;
   border-top: 2px dashed silver;
   background: #FFEBCD;
 }
@@ -252,4 +251,16 @@ nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background-color: #117a8b;
+  padding: 1rem 0rem 1rem 0rem;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1rem;
+  width: 80%;
+  font-size: 1.5rem;
 }
