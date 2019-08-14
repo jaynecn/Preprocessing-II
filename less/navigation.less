@@ -1,13 +1,19 @@
 // Navigation Styles here
 
 nav {
+  @media @mobile {
+    width: 100%;
+    .layout(space-around, center);
+    padding: 0rem;
+    margin: 0rem;
+  }
    a{
     text-decoration: none;
     color: @shark;
     font-size: 1.5rem;
     padding: 1rem;
-
-
+    @media @mobile {
+      padding-bottom: 0rem;
+    }
   }
-
 }

@@ -168,11 +168,27 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: flex-start;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0rem;
+    margin: 0rem;
+  }
+}
 nav a {
   text-decoration: none;
   color: #212529;
   font-size: 1.5rem;
   padding: 1rem;
+}
+@media (max-width: 500px) {
+  nav a {
+    padding-bottom: 0rem;
+  }
 }
 .footer {
   border-top: 2px dashed silver;
@@ -182,7 +198,7 @@ nav a {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
-  padding: 20px;
+  padding: 2rem;
 }
 .home header {
   display: flex;
@@ -195,7 +211,13 @@ nav a {
   border-bottom: 2px dashed #C0C0C0;
 }
 .home header h1 {
-  font-size: 3rem;
+  font-size: 5rem;
+}
+@media (max-width: 500px) {
+  .home header h1 {
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+  }
 }
 @media (max-width: 500px) {
   .home header {
@@ -203,8 +225,8 @@ nav a {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 0rem 0rem 0rem 0rem;
-    padding: 1rem 0rem 1rem 0rem;
+    margin: 0rem;
+    padding: 1rem 0rem;
   }
 }
 .home .camper {
@@ -224,7 +246,7 @@ nav a {
     margin-top: 1rem;
   }
   .home .camper p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 .home .content-section {
@@ -248,7 +270,7 @@ nav a {
     width: 100%;
   }
   .home .content-section .text-content p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 .home .content-section .img-content {
@@ -301,7 +323,7 @@ nav a {
     margin: 2rem 1.5rem;
   }
   .home .content-destination p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 .home .content-pick {
@@ -316,10 +338,10 @@ nav a {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 2rem 1.5rem;
+    margin: 2rem 1rem;
   }
   .home .content-pick p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 .home .content-pick .destination {
@@ -331,16 +353,27 @@ nav a {
     width: 80%;
   }
 }
+.home .content-pick .destination h4 {
+  font-size: 2.5rem;
+}
 .home .content-pick .destination .btn {
   background-color: #117a8b;
-  padding: 1rem 0rem 1rem 0rem;
+  padding: 1.5rem 0rem;
   color: #FFFFFF;
-  font-size: 1.25rem;
   display: flex;
   flex-direction: flex-start;
   justify-content: space-around;
   align-items: center;
   border-radius: 1rem;
   width: 80%;
-  font-size: 1.5rem;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    background-color: #1ab6cf;
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0rem;
+    border: 0.1rem solid #cccaca;
+  }
 }
